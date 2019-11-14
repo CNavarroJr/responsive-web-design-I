@@ -1,3 +1,316 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
 
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+/*
+* {
+	box-sizing: border-box;
+} */
+
+.container {
+	width: 900px;
+	height: 1300px;
+	margin: 0 auto;
+/*	border: 1px solid red; */
+}
+
+#navbar {
+	/* background-color: blue;
+ position: sticky; 
+	top: 0; */
+	height: 90px;
+	width: 805px;
+	margin-left: 44px;
+}
+
+header nav {
+	display: inline-block; 
+	margin-top: 40px;
+	margin-left:-12px;
+}
+
+header nav a {
+	text-decoration: none;
+	color: gray;
+	margin: 0 20px;
+	font-family: 'Bowlby One SC';
+	font-size: 14px;
+}
+
+header nav a:hover {
+	color: black;
+}
+
+header .logo {
+	margin-left: 115px;
+}
+
+div .section1 button {
+	margin-left: 178px;
+	width: 136px;
+}
+
+.section1 {
+	/* border: 2px solid red; */
+	margin: 1%;
+	width:100%;
+}
+
+div .section1 h1 {
+	text-align: center;
+	margin-top: 78px;
+	margin-left:56px;
+	font-size: 72px;
+}
+
+div .section1 h2 {
+	text-align: center;
+}
+
+.content1 {
+	/* border: 2px solid blue; */
+	display: inline-block;
+	vertical-align: top;
+	margin: 1%;
+	width: 47%;
+}
+
+div .section1 img {
+	height: 330px;
+	width: 330px;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+hr {
+	width: 800px;
+}
+
+.section2 {
+	margin: 1%;
+	width: 100%;
+}
+
+.content2 {
+	/* border: 2px solid blue; */
+	display: inline-block;
+	margin: 1%;
+	width: 42%;
+	margin-left:39px;
+}
+
+div .middle1 img {
+	width: 805px;
+	margin-top: 10px;
+	margin-left: 47px;
+}
+
+.section3 {
+	margin: 5%;
+	width: 100%;
+}
+
+.content3 {
+	/*border: 2px solid blue; */
+	display: inline-block;
+	width: 30%;
+}
+
+.contact {
+	margin: 5%;
+	width: 91%;
+}
+
+/* .contact1 {
+	border: 2px solid blue;
+} */
+
+footer {
+	text-align: center;
+}
+
+@media(max-width: 800px) {
+
+  .container {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 46px;
+  }
+
+  hr {
+    width: 700px;
+  }
+
+  header nav {
+    margin-left: -78px;
+  }
+
+  header nav a {
+    margin: 0 40px;
+    }
+
+  header .logo {
+    display: flex;
+    margin-top:-77px;
+    margin-left: 230px;
+  }
+  .content1 img {
+    display: none;
+  }
+
+  div .section1 {
+    text-align: center;
+    margin-left: 20px;
+    margin-left: 135px;
+    margin-top: -51px;
+  }
+
+  div .section1 button {
+    margin-left: 60px;
+  }
+
+  .middle1 .middle-img {
+    width: 700px;
+    margin-left: 5px;
+  }
+
+  .section2 {
+    margin-left: -20px;
+  }
+
+  .content2 {
+    width: 300px;
+    margin: 0 24px;
+  }
+
+  .section3 {
+    width: 700px;
+    margin-left: -5px;
+  }
+
+  .content3 {
+    margin: 5px 10px 10px 10px;
+    padding: 5px
+  }
+
+  .contact {
+    margin-left: 0px;
+  }
+}
+
+@media(max-width: 400px) {
+  .container {
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  hr {
+    width: 400px;
+  }
+  
+  header nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    width: 400px;
+    padding: 14px;
+  }
+  
+  header .logo {
+    margin-top: -280px;
+    margin-left: 60px;
+    }
+  
+  div .section1 {
+   margin-top: 160px;
+   margin-left: -10px;
+  }
+  
+  div .section1 h1 {
+    text-align: center;
+  }
+  
+  .content2{
+    width: 400px;
+    padding: 8px
+  }
+  
+  .middle1 .middle-img {
+    width: 400px;
+  }
+  
+  .section3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    }
+  
+  .content3 {
+    width: 400px;
+    margin: 10px;
+  }
+
+  .contact {
+    padding: 10px;
+  }
+}
